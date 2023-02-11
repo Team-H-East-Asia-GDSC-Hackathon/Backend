@@ -20,7 +20,7 @@ router = APIRouter()
 # )
 
 @app.get("/")
-def Hello():
+async def Hello():
     return {"Hello":"Vegan!"}
 
 @app.get(path="/diet/info/")
