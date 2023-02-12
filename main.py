@@ -5,9 +5,9 @@ app = FastAPI()
 
 @app.get("/")
 async def Hello():
-    return {"Hello":"Vegan!"}
+    return {"Hello":"Vegan"}
 
-@app.post(path="/diet/info/")
+@app.post("/diet/info/")
 async def get_info(date:str,time:str):
     f = open('menu.json', 'r')
     json_dict = json.load(f)
