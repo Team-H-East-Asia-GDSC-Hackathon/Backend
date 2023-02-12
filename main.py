@@ -15,4 +15,4 @@ async def get_info(date:str,time:str):
         if str(date) == json_dict[i]['date']  and str(time) == json_dict[i]['time']:
             return json.dumps(json_dict[i])
         else:
-            raise HTTPException(status_code=400, detail="Model not found.")
+            raise HTTPException(status_code=400, detail="data found.")
