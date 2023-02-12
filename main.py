@@ -2,10 +2,10 @@ import json
 
 from fastapi import FastAPI, File, UploadFile, APIRouter
 from fastapi.responses import FileResponse,Response
-from fastapi.middleware.cors import CORSMiddleware
+# from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-router = APIRouter()
+# router = APIRouter()
 
 # origins = [
 #     "http://localhost:3000",
