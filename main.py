@@ -4,11 +4,11 @@ from fastapi import FastAPI,  HTTPException
 app = FastAPI()
 
 @app.get("/")
-async def Hello():
+def Hello():
     return {"Hello":"Vegan"}
 
 @app.post("/diet/info/")
-async def get_info(date:str,time:str):
+def get_info(date:str,time:str):
     f = open('menu.json', 'r')
     json_dict = json.load(f)
     for i in range(len(json_dict)):
